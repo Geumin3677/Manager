@@ -8,7 +8,8 @@ module.exports = {
 
 	data: new SlashCommandBuilder()
 		.setName('인증')
-		.setDescription('인증을 합니다.'),
+		.setDescription('인증을 합니다.')
+        ,
 
     async execute(interaction, client) {
         var jsonBuffer = fs.readFileSync('./data.json')
